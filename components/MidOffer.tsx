@@ -12,7 +12,7 @@ export default function MidOffer() {
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Olá! Meu nome é ${name || "___"}. Vi a simulação de R$399/mês e quero saber se tenho direito ao Minha Casa Minha Vida. Meu WhatsApp: ${
+    const message = `Olá! Meu nome é ${name || "___"}. Vi a simulação de R$599/mês e quero saber se tenho direito ao Minha Casa Minha Vida. Meu WhatsApp: ${
       phone || "___"
     }`;
     window.open(
@@ -28,15 +28,15 @@ export default function MidOffer() {
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-brand-light px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-brand">
-                <Home className="h-3.5 w-3.5" />
+                <Home className="h-4 w-4" strokeWidth={2.4} />
                 Minha Casa Minha Vida
               </span>
               <h2 className="font-display mt-5 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
                 Casa própria a partir de{" "}
-                <span className="highlight-mark">R$ 399</span> por mês
+                <span className="highlight-mark">R$ 599</span> por mês
               </h2>
-              <p className="mt-4 flex items-start gap-2 text-sm leading-relaxed text-ink/60 sm:text-base">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand" />
+              <p className="mt-4 flex items-start gap-2 text-base leading-relaxed text-ink/60 sm:text-lg">
+                <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-brand" strokeWidth={2.3} />
                 Você já pode ter esse direito e ainda não sabe. Descubra agora
                 mesmo, sem custo e sem compromisso.
               </p>
@@ -44,7 +44,7 @@ export default function MidOffer() {
 
             <form
               onSubmit={onSubmit}
-              className="flex flex-col gap-3 rounded-2xl bg-cream-soft p-3"
+              className="flex flex-col gap-4 rounded-[1.5rem] bg-cream-soft p-5"
             >
               <input
                 value={name}
@@ -52,7 +52,7 @@ export default function MidOffer() {
                 type="text"
                 required
                 placeholder="Seu nome"
-                className="w-full rounded-xl bg-white px-4 py-3.5 text-sm text-ink placeholder:text-ink/35 focus:outline-none focus:ring-2 focus:ring-brand/30"
+                className="w-full rounded-2xl bg-white px-5 py-4.5 text-base text-ink placeholder:text-ink/35 focus:outline-none focus:ring-2 focus:ring-brand/30"
               />
               <input
                 value={phone}
@@ -60,15 +60,15 @@ export default function MidOffer() {
                 type="tel"
                 required
                 placeholder="Seu WhatsApp com DDD"
-                className="w-full rounded-xl bg-white px-4 py-3.5 text-sm text-ink placeholder:text-ink/35 focus:outline-none focus:ring-2 focus:ring-brand/30"
+                className="w-full rounded-2xl bg-white px-5 py-4.5 text-base text-ink placeholder:text-ink/35 focus:outline-none focus:ring-2 focus:ring-brand/30"
               />
               <button
                 type="submit"
-                className="w-full rounded-xl bg-brand px-5 py-3.5 text-sm font-semibold text-cream transition-transform hover:-translate-y-0.5"
+                className="w-full rounded-2xl bg-brand px-5 py-4.5 text-base font-semibold text-cream transition-transform hover:-translate-y-0.5"
               >
                 Quero ser atendido
               </button>
-              <p className="px-1 pb-1 pt-1 text-center text-xs leading-relaxed text-ink/40">
+              <p className="px-1 pb-1 pt-1 text-center text-sm leading-relaxed text-ink/40">
                 O Minha Casa Minha Vida foi feito para beneficiar milhões de
                 famílias brasileiras. Talvez você seja uma delas.
               </p>

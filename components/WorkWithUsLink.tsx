@@ -30,7 +30,7 @@ export function WorkWithUsLink() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="text-sm text-cream/60 transition-colors hover:text-cream"
+        className="text-base text-cream/60 transition-colors hover:text-cream"
       >
         Trabalhe conosco
       </button>

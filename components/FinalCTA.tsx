@@ -27,7 +27,7 @@ export default function FinalCTA() {
             <h2 className="font-display mx-auto mt-6 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight text-cream sm:text-5xl">
               Talvez você seja a próxima família a realizar esse sonho
             </h2>
-            <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-cream/60 sm:text-base">
+            <p className="mx-auto mt-5 max-w-md text-base leading-relaxed text-cream/60 sm:text-lg">
               Fale agora com nossa equipe e descubra, sem custo, se você tem
               direito ao Minha Casa Minha Vida.
             </p>
@@ -35,10 +35,10 @@ export default function FinalCTA() {
               href={`https://wa.me/${WHATSAPP_NUMBER}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group mt-9 inline-flex items-center gap-2 rounded-full bg-brand px-7 py-4 text-sm font-semibold text-cream shadow-[0_20px_50px_-16px_rgba(181,80,47,0.7)] transition-transform hover:-translate-y-0.5"
+              className="group mt-9 inline-flex items-center gap-2 rounded-full bg-brand px-7 py-4 text-base font-semibold text-cream shadow-[0_20px_50px_-16px_rgba(181,80,47,0.7)] transition-transform hover:-translate-y-0.5"
             >
               Quero minha simulação gratuita
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" strokeWidth={2.4} />
             </a>
           </div>
         </div>

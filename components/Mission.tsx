@@ -35,7 +35,7 @@ export default function Mission() {
             <h2 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
               Nossa missão é você morar bem
             </h2>
-            <p className="mt-5 max-w-md text-base leading-relaxed text-ink/60">
+            <p className="mt-5 max-w-md text-lg leading-relaxed text-ink/60">
               Com parcelas baixas e um pouco de planejamento, comprar um
               imóvel se torna um investimento ao alcance de muitos
               brasileiros. O resultado é você dono ou dona de um lar onde sua
@@ -50,9 +50,11 @@ export default function Mission() {
           {points.map((p, i) => (
             <Reveal key={p.title} delay={0.1 + i * 0.08}>
               <div className="h-full rounded-2xl bg-white p-6 shadow-[0_16px_40px_-28px_rgba(18,22,44,0.35)]">
-                <p.icon className="h-6 w-6 text-brand" strokeWidth={1.8} />
-                <p className="mt-4 text-sm font-bold text-ink">{p.title}</p>
-                <p className="mt-2 text-sm leading-relaxed text-ink/55">
+                <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-light">
+                  <p.icon className="h-7 w-7 text-brand" strokeWidth={2.3} />
+                </span>
+                <p className="mt-4 text-base font-bold text-ink">{p.title}</p>
+                <p className="mt-2 text-base leading-relaxed text-ink/60">
                   {p.text}
                 </p>
               </div>

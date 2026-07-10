@@ -56,7 +56,7 @@ export default function Hero() {
 
           <Reveal delay={0.16}>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink/60 sm:text-lg">
-              Parcelas a partir de R$ 399 por mês e subsídio de até R$ 55 mil
+              Parcelas a partir de R$ 599 por mês e subsídio de até R$ 55 mil
               do governo federal. Fale com nossa equipe e descubra sua faixa
               em 5 minutos, sem sair de casa.
             </p>
@@ -65,7 +65,7 @@ export default function Hero() {
           <Reveal delay={0.24}>
             <form
               onSubmit={onSubmit}
-              className="mt-9 flex max-w-xl flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-3 shadow-[0_20px_50px_-24px_rgba(28,25,18,0.25)] sm:flex-row sm:items-center sm:gap-2 sm:p-2 sm:pl-5"
+              className="mt-9 flex max-w-2xl flex-col gap-3 rounded-[1.75rem] border border-ink/10 bg-white p-4 shadow-[0_24px_60px_-24px_rgba(28,25,18,0.28)] sm:flex-row sm:items-center sm:gap-3 sm:p-3 sm:pl-7"
             >
               <input
                 value={name}
@@ -73,7 +73,7 @@ export default function Hero() {
                 type="text"
                 required
                 placeholder="Seu nome"
-                className="w-full min-w-0 flex-[0.85] bg-transparent px-2 py-2.5 text-sm text-ink placeholder:text-ink/35 focus:outline-none sm:border-r sm:border-ink/10 sm:px-3"
+                className="w-full min-w-0 flex-[0.85] bg-transparent px-3 py-4 text-base text-ink placeholder:text-ink/35 focus:outline-none sm:border-r sm:border-ink/10 sm:px-4 sm:text-lg"
               />
               <input
                 value={phone}
@@ -81,26 +81,26 @@ export default function Hero() {
                 type="tel"
                 required
                 placeholder="Seu WhatsApp"
-                className="w-full min-w-0 flex-1 bg-transparent px-2 py-2.5 text-sm text-ink placeholder:text-ink/35 focus:outline-none sm:px-3"
+                className="w-full min-w-0 flex-1 bg-transparent px-3 py-4 text-base text-ink placeholder:text-ink/35 focus:outline-none sm:px-4 sm:text-lg"
               />
               <button
                 type="submit"
-                className="group flex w-full shrink-0 items-center justify-center gap-1.5 rounded-xl bg-brand px-5 py-3 text-sm font-semibold text-cream transition-transform hover:-translate-y-0.5 sm:w-auto"
+                className="group flex w-full shrink-0 items-center justify-center gap-1.5 rounded-2xl bg-brand px-7 py-4 text-base font-semibold text-cream transition-transform hover:-translate-y-0.5 sm:w-auto"
               >
                 Quero ser atendido
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" strokeWidth={2.4} />
               </button>
             </form>
           </Reveal>
 
           <Reveal delay={0.32}>
-            <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs font-medium text-ink/55">
-              <span className="flex items-center gap-1.5">
-                <ShieldCheck className="h-4 w-4 text-brand" />
+            <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium text-ink/55">
+              <span className="flex items-center gap-2">
+                <ShieldCheck className="h-5 w-5 text-brand" strokeWidth={2.3} />
                 Atendimento 100% gratuito
               </span>
-              <span className="flex items-center gap-1.5">
-                <Star className="h-4 w-4 fill-accent-dark text-accent-dark" />
+              <span className="flex items-center gap-2">
+                <Star className="h-5 w-5 fill-accent-dark text-accent-dark" strokeWidth={2.3} />
                 4.9/5 em mais de 500 famílias
               </span>
             </div>
@@ -130,7 +130,7 @@ export default function Hero() {
 
           <div className="absolute -bottom-6 -left-6 rounded-2xl border border-ink/10 bg-white px-6 py-4 shadow-[0_20px_50px_-20px_rgba(28,25,18,0.3)] sm:-bottom-8 sm:-left-8">
             <p className="font-display text-3xl font-extrabold text-ink">
-              R$ 399<span className="text-base font-medium text-ink/50">/mês</span>
+              R$ 599<span className="text-base font-medium text-ink/50">/mês</span>
             </p>
             <p className="mt-0.5 text-xs font-medium text-ink/50">
               parcelas que cabem no seu bolso

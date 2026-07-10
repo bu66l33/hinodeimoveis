@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 border-b border-cream/10 pb-14 sm:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
             <Logo light full />
-            <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream/50">
+            <p className="mt-5 max-w-xs text-base leading-relaxed text-cream/50">
               Ajudamos famílias brasileiras a conquistar a casa própria
               através do Minha Casa Minha Vida, com atendimento humano e
               gratuito do início ao fim.
@@ -35,9 +35,9 @@ export default function Footer() {
                   key={i}
                   href="#"
                   aria-label="Rede social"
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-cream/15 text-cream/60 transition-colors hover:bg-cream/10 hover:text-cream"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-cream/20 text-cream/70 transition-colors hover:bg-cream/10 hover:text-cream"
                 >
-                  <Icon className="h-4 w-4" />
+                  <Icon className="h-5 w-5" strokeWidth={2.2} />
                 </a>
               ))}
             </div>
@@ -58,7 +58,7 @@ export default function Footer() {
                     <li key={l}>
                       <a
                         href="#"
-                        className="text-sm text-cream/60 transition-colors hover:text-cream"
+                        className="text-base text-cream/60 transition-colors hover:text-cream"
                       >
                         {l}
                       </a>
@@ -70,11 +70,12 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 py-8 text-xs text-cream/40 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 py-8 text-sm text-cream/40 sm:flex-row">
           <p>&copy; {new Date().getFullYear()} Hinode Imóveis. Todos os direitos reservados.</p>
           <p className="max-w-md text-center sm:text-right">
-            A Hinode Imóveis é uma correspondente imobiliária independente e
-            não possui vínculo oficial com a Caixa Econômica Federal.
+            A Hinode Imóveis é uma imobiliária especialista em Minha Casa
+            Minha Vida e não possui vínculo oficial com a Caixa Econômica
+            Federal.
           </p>
         </div>
       </div>

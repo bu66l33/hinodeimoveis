@@ -29,13 +29,13 @@ export default function Benefit() {
 
         <Reveal delay={0.1}>
           <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-brand">
-            <Sparkles className="h-3.5 w-3.5" />
+            <Sparkles className="h-4 w-4" strokeWidth={2.3} />
             Benefício federal
           </span>
           <h2 className="font-display mt-4 max-w-md text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
             Subsídio de até R$ 55 mil para comprar seu primeiro imóvel
           </h2>
-          <p className="mt-5 max-w-md text-base leading-relaxed text-ink/60">
+          <p className="mt-5 max-w-md text-lg leading-relaxed text-ink/60">
             Cada família recebe do governo um benefício diferente, de acordo
             com sua renda e condição. Nossa equipe te ajuda, sem custo, a
             descobrir em qual faixa você se encaixa e qual imóvel cabe no seu
@@ -45,10 +45,10 @@ export default function Benefit() {
             href={`https://wa.me/${WHATSAPP_NUMBER}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="group mt-8 inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3.5 text-sm font-semibold text-cream transition-transform hover:-translate-y-0.5"
+            className="group mt-8 inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3.5 text-base font-semibold text-cream transition-transform hover:-translate-y-0.5"
           >
             Quero apoio gratuito
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" strokeWidth={2.4} />
           </a>
         </Reveal>
       </div>

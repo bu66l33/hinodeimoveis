@@ -48,7 +48,7 @@ export default function Testimonials() {
           <h2 className="font-display mt-4 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
             Mais de 500 famílias conquistaram seu imóvel com a Hinode
           </h2>
-          <p className="mx-auto mt-4 max-w-md text-sm font-medium text-ink/50">
+          <p className="mx-auto mt-4 max-w-md text-base font-medium text-ink/50">
             Depoimentos reais de quem já conquistou seu imóvel com a gente
           </p>
         </Reveal>
@@ -63,20 +63,20 @@ export default function Testimonials() {
                   {t.initials}
                 </span>
                 <div className="min-w-0">
-                  <p className="flex items-center gap-1 text-sm font-semibold text-ink">
+                  <p className="flex items-center gap-1.5 text-base font-semibold text-ink">
                     <span className="truncate">{t.name}</span>
                     <BadgeCheck
-                      className="h-3.5 w-3.5 shrink-0 text-brand"
-                      strokeWidth={2}
+                      className="h-4 w-4 shrink-0 text-brand"
+                      strokeWidth={2.4}
                     />
                   </p>
-                  <p className="text-xs text-ink/45">
+                  <p className="text-sm text-ink/45">
                     recomenda Hinode Imóveis &middot; {t.date}
                   </p>
                 </div>
               </div>
 
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-ink/70">
+              <p className="mt-4 flex-1 text-base leading-relaxed text-ink/70">
                 &ldquo;{t.quote}&rdquo;
               </p>
             </div>

@@ -49,7 +49,7 @@ export default function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="text-[0.9rem] font-medium text-ink/60 transition-colors hover:text-ink"
+              className="text-[0.95rem] font-semibold text-ink/65 transition-colors hover:text-ink"
             >
               {l.label}
             </a>
@@ -61,7 +61,7 @@ export default function Nav() {
             href="#contato"
             className="hidden items-center gap-2 rounded-full bg-brand px-4 py-2.5 text-sm font-semibold text-cream shadow-[0_10px_26px_-10px_rgba(181,80,47,0.7)] transition-transform hover:-translate-y-0.5 sm:inline-flex"
           >
-            <MessageCircle className="h-4 w-4" strokeWidth={2.2} />
+            <MessageCircle className="h-5 w-5" strokeWidth={2.4} />
             Fale conosco
           </a>
 

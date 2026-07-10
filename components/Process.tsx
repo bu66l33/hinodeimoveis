@@ -13,13 +13,13 @@ const steps = [
   },
   {
     icon: FileCheck2,
-    title: "Envie seus documentos",
-    text: "Analisamos sua renda e ajudamos a comprovar a necessidade de apoio na compra do imóvel.",
+    title: "Análise gratuita da sua renda",
+    text: "Nossa equipe avalia sua situação sem custo e te mostra exatamente qual apoio você tem direito.",
   },
   {
     icon: KeyRound,
-    title: "Escolha seu novo lar",
-    text: "Conheça as opções disponíveis do jeito que você precisa, na cidade que você busca.",
+    title: "Conheça seu novo lar",
+    text: "De acordo com a sua aprovação, apresentamos as opções disponíveis em São José dos Campos.",
   },
 ];
 
@@ -32,7 +32,7 @@ export default function Process() {
             Como funciona
           </span>
           <h2 className="font-display mt-4 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
-            Um processo simples, do primeiro contato às chaves na mão
+            Do primeiro contato à realização do seu sonho
           </h2>
         </Reveal>
 
@@ -41,16 +41,16 @@ export default function Process() {
           {steps.map((s, i) => (
             <Reveal key={s.title} delay={i * 0.1}>
               <div className="relative">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white shadow-[0_10px_30px_-16px_rgba(28,25,18,0.35)]">
-                  <s.icon className="h-6 w-6 text-brand" strokeWidth={1.8} />
+                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-light shadow-[0_10px_30px_-16px_rgba(28,25,18,0.35)]">
+                  <s.icon className="h-7 w-7 text-brand" strokeWidth={2.3} />
                 </div>
-                <p className="mt-6 text-xs font-semibold text-ink/35">
+                <p className="mt-6 text-sm font-bold text-ink/40">
                   Etapa {String(i + 1).padStart(2, "0")}
                 </p>
-                <h3 className="font-display mt-2 text-xl font-bold text-ink">
+                <h3 className="font-display mt-2 text-xl font-bold text-ink sm:text-2xl">
                   {s.title}
                 </h3>
-                <p className="mt-2.5 text-sm leading-relaxed text-ink/55">
+                <p className="mt-2.5 text-base leading-relaxed text-ink/60">
                   {s.text}
                 </p>
               </div>
@@ -64,7 +64,7 @@ export default function Process() {
               <p className="font-display text-2xl font-extrabold text-cream">
                 Pronto!
               </p>
-              <p className="mt-1.5 max-w-md text-sm leading-relaxed text-cream/60">
+              <p className="mt-1.5 max-w-md text-base leading-relaxed text-cream/60">
                 É só aguardar a aprovação do benefício para ter um
                 financiamento super acessível — nós cuidamos do resto.
               </p>
@@ -73,10 +73,10 @@ export default function Process() {
               href={`https://wa.me/${WHATSAPP_NUMBER}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex shrink-0 items-center gap-2 rounded-full bg-brand px-6 py-3.5 text-sm font-semibold text-cream transition-transform hover:-translate-y-0.5"
+              className="group flex shrink-0 items-center gap-2 rounded-full bg-brand px-6 py-3.5 text-base font-semibold text-cream transition-transform hover:-translate-y-0.5"
             >
               Fale conosco
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" strokeWidth={2.4} />
             </a>
           </div>
         </Reveal>

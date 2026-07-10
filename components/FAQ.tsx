@@ -7,7 +7,7 @@ import { Reveal } from "./Reveal";
 const faqs = [
   {
     q: "Afinal, quem é a Hinode Imóveis?",
-    a: "Somos uma correspondente imobiliária independente especializada no programa Minha Casa Minha Vida. Ajudamos famílias brasileiras a descobrir seu direito ao benefício e a encontrar o imóvel ideal, com atendimento humano do início ao fim.",
+    a: "Somos uma imobiliária especialista no programa Minha Casa Minha Vida, sediada em São José dos Campos. Ajudamos famílias brasileiras a descobrir seu direito ao benefício e a encontrar o imóvel ideal, com atendimento humano do início ao fim.",
   },
   {
     q: "Como funciona o processo pra comprar um imóvel com a Hinode?",
@@ -56,14 +56,17 @@ export default function FAQ() {
                   className="flex w-full items-center justify-between gap-6 py-5 text-left"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-sm font-bold text-ink sm:text-base">
+                  <span className="text-base font-bold text-ink sm:text-lg">
                     {item.q}
                   </span>
-                  <Plus
-                    className={`h-5 w-5 shrink-0 text-brand transition-transform duration-300 ${
-                      isOpen ? "rotate-45" : ""
-                    }`}
-                  />
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-light">
+                    <Plus
+                      className={`h-5 w-5 text-brand transition-transform duration-300 ${
+                        isOpen ? "rotate-45" : ""
+                      }`}
+                      strokeWidth={2.6}
+                    />
+                  </span>
                 </button>
                 <div
                   className={`grid overflow-hidden transition-all duration-300 ease-out ${
@@ -71,7 +74,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="max-w-xl text-sm leading-relaxed text-ink/60">
+                    <p className="max-w-xl text-base leading-relaxed text-ink/60">
                       {item.a}
                     </p>
                   </div>
