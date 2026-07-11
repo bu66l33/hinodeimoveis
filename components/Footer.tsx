@@ -21,15 +21,15 @@ export default function Footer() {
   return (
     <footer className="bg-ink pt-20">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid grid-cols-1 gap-12 border-b border-cream/10 pb-14 sm:grid-cols-[1.3fr_1fr_1fr_1fr]">
-          <div>
+        <div className="grid grid-cols-1 gap-12 border-b border-cream/10 pb-14 text-center sm:grid-cols-[1.3fr_1fr_1fr_1fr] sm:text-left">
+          <div className="flex flex-col items-center sm:items-start">
             <Logo light full />
             <p className="mt-5 max-w-xs text-base leading-relaxed text-cream/50">
               Ajudamos famílias brasileiras a conquistar a casa própria
               através do Minha Casa Minha Vida, com atendimento humano e
               gratuito do início ao fim.
             </p>
-            <div className="mt-6 flex items-center gap-3">
+            <div className="mt-6 flex items-center justify-center gap-3 sm:justify-start">
               {[Instagram, Facebook].map((Icon, i) => (
                 <a
                   key={i}
@@ -44,11 +44,11 @@ export default function Footer() {
           </div>
 
           {columns.map((col) => (
-            <div key={col.title}>
+            <div key={col.title} className="flex flex-col items-center sm:items-start">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cream/40">
                 {col.title}
               </p>
-              <ul className="mt-5 space-y-3">
+              <ul className="mt-5 flex flex-col items-center space-y-3 sm:items-start">
                 {col.links.map((l) =>
                   l === "Trabalhe conosco" ? (
                     <li key={l}>

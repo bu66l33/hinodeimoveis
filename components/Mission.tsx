@@ -27,7 +27,7 @@ export default function Mission() {
     <section className="bg-cream-soft py-24 sm:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-16">
-          <Reveal>
+          <Reveal className="flex justify-center lg:justify-start">
             <Logo full />
           </Reveal>
 

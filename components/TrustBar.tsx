@@ -2,7 +2,7 @@ import { Users, Wallet, Award } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const stats = [
-  { icon: Users, value: "500+", label: "famílias atendidas" },
+  { icon: Users, value: "5.000+", label: "famílias atendidas" },
   { icon: Wallet, value: "R$ 55 mil", label: "de subsídio disponível" },
   { icon: Award, value: "9 anos", label: "de experiência no setor" },
 ];
