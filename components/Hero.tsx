@@ -35,12 +35,12 @@ export default function Hero() {
               sizes="100vw"
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-ink/85 via-ink/70 to-ink/90" />
+            <div className="absolute inset-0 bg-gradient-to-b from-ink/90 via-ink/80 to-ink/95" />
           </div>
 
           <div className="relative z-10 flex flex-col items-center px-6 py-16 text-center sm:px-14 sm:py-24">
             <Reveal>
-              <span className="inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2.5 ring-1 ring-cream/20 backdrop-blur-md">
+              <span className="inline-flex items-center gap-3 rounded-full bg-cream px-4 py-2.5 shadow-[0_12px_30px_-10px_rgba(0,0,0,0.5)]">
                 <Image
                   src="/mcmv-logo.png"
                   alt="Minha Casa Minha Vida"
@@ -48,8 +48,8 @@ export default function Hero() {
                   height={176}
                   className="h-8 w-auto sm:h-10"
                 />
-                <span className="h-5 w-px bg-cream/25" />
-                <span className="text-xs font-semibold tracking-wide text-cream/90 sm:text-sm">
+                <span className="h-5 w-px bg-ink/15" />
+                <span className="text-xs font-bold tracking-wide text-ink sm:text-sm">
                   Simulação 100% gratuita
                 </span>
               </span>
@@ -64,18 +64,23 @@ export default function Hero() {
             </Reveal>
 
             <Reveal delay={0.14}>
-              <div className="mt-6 inline-flex items-center gap-2.5 rounded-full bg-accent px-6 py-3 shadow-[0_18px_40px_-14px_rgba(246,214,103,0.7)]">
-                <span className="font-display text-2xl font-extrabold text-ink sm:text-3xl">
-                  R$ 599
+              <div className="mt-7 inline-flex flex-col items-center gap-0.5 rounded-[1.75rem] bg-accent px-9 py-4 shadow-[0_25px_60px_-15px_rgba(246,214,103,0.9)] ring-4 ring-cream/30 sm:px-11 sm:py-5">
+                <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-ink/60 sm:text-xs">
+                  A partir de
                 </span>
-                <span className="text-sm font-bold text-ink/70 sm:text-base">
-                  /mês
-                </span>
+                <div className="flex items-baseline gap-2">
+                  <span className="font-display text-4xl font-extrabold leading-none text-ink sm:text-5xl">
+                    R$ 599
+                  </span>
+                  <span className="text-base font-bold text-ink/70 sm:text-lg">
+                    /mês
+                  </span>
+                </div>
               </div>
             </Reveal>
 
             <Reveal delay={0.2}>
-              <p className="mt-5 max-w-xl text-base leading-relaxed text-cream/75 sm:text-lg">
+              <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-cream sm:text-lg">
                 Parcelas que cabem no seu bolso e subsídio de até R$ 55 mil do
                 governo federal. Fale com nossa equipe e descubra sua faixa em
                 5 minutos, sem sair de casa.
@@ -118,7 +123,7 @@ export default function Hero() {
 
             <Reveal delay={0.36}>
               <div className="mt-9 flex flex-col items-center gap-5 sm:flex-row sm:justify-center sm:gap-9">
-                <span className="flex items-center gap-2 text-sm font-medium text-cream/70">
+                <span className="flex items-center gap-2 text-sm font-semibold text-cream">
                   <ShieldCheck className="h-5 w-5 text-accent" strokeWidth={2.3} />
                   Atendimento 100% gratuito
                 </span>
@@ -137,8 +142,8 @@ export default function Hero() {
                       +
                     </span>
                   </div>
-                  <p className="text-left text-sm font-medium leading-snug text-cream/80">
-                    <span className="font-bold text-cream">+5.000 famílias</span>{" "}
+                  <p className="text-left text-sm font-semibold leading-snug text-cream">
+                    <span className="font-extrabold text-accent">+5.000 famílias</span>{" "}
                     realizaram seu sonho conosco
                   </p>
                 </div>
