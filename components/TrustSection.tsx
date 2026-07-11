@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Landmark, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 export default function TrustSection() {
@@ -65,13 +65,14 @@ export default function TrustSection() {
           </Reveal>
 
           <Reveal delay={0.18}>
-            <div className="flex h-full flex-col items-center justify-center gap-3 rounded-[1.5rem] border border-ink/10 bg-white p-7 text-center">
-              <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-light">
-                <Landmark className="h-8 w-8 text-brand" strokeWidth={2.3} />
-              </span>
-              <p className="font-display text-xl font-extrabold text-ink">
-                Caixa Econômica Federal
-              </p>
+            <div className="flex h-full flex-col items-center justify-center gap-4 rounded-[1.5rem] border border-ink/10 bg-white p-7 text-center">
+              <Image
+                src="/caixa-logo.png"
+                alt="Caixa Econômica Federal"
+                width={160}
+                height={80}
+                className="h-14 w-auto"
+              />
               <p className="text-sm leading-relaxed text-ink/50">
                 Financiamento e garantia oficial do programa Minha Casa Minha
                 Vida

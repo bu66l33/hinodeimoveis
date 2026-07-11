@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Landmark } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const WHATSAPP_NUMBER = "5511999999999";
@@ -29,7 +29,7 @@ export default function Benefit() {
 
         <Reveal delay={0.1}>
           <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-brand">
-            <Sparkles className="h-4 w-4" strokeWidth={2.3} />
+            <Landmark className="h-4 w-4" strokeWidth={2.3} />
             Benefício federal
           </span>
           <h2 className="font-display mt-4 max-w-md text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
