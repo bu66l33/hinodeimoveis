@@ -66,12 +66,12 @@ export default function TrustSection() {
 
           <Reveal delay={0.18}>
             <div className="flex h-full flex-col items-center justify-center gap-5 rounded-[1.5rem] border border-ink/10 bg-white p-6 text-center">
-              <div className="relative h-20 w-full max-w-[240px] sm:h-24 sm:max-w-[280px]">
+              <div className="relative h-14 w-full max-w-[170px] sm:h-16 sm:max-w-[190px]">
                 <Image
                   src="/caixa-logo.png"
                   alt="Caixa Econômica Federal"
                   fill
-                  sizes="280px"
+                  sizes="190px"
                   className="object-contain"
                 />
               </div>

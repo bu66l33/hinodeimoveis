@@ -64,22 +64,6 @@ export default function Hero() {
             </Reveal>
 
             <Reveal delay={0.14}>
-              <div className="mt-7 inline-flex flex-col items-center gap-0.5 rounded-[1.75rem] bg-accent px-9 py-4 shadow-[0_25px_60px_-15px_rgba(246,214,103,0.9)] ring-4 ring-cream/30 sm:px-11 sm:py-5">
-                <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-ink/60 sm:text-xs">
-                  A partir de
-                </span>
-                <div className="flex items-baseline gap-2">
-                  <span className="font-display text-4xl font-extrabold leading-none text-ink sm:text-5xl">
-                    R$ 599
-                  </span>
-                  <span className="text-base font-bold text-ink/70 sm:text-lg">
-                    /mês
-                  </span>
-                </div>
-              </div>
-            </Reveal>
-
-            <Reveal delay={0.2}>
               <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-cream sm:text-lg">
                 Parcelas que cabem no seu bolso e subsídio de até R$ 55 mil do
                 governo federal. Fale com nossa equipe e descubra sua faixa em
