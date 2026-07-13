@@ -25,7 +25,15 @@ export default function Nav() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-3 sm:pt-4">
+    <>
+      <div className="fixed inset-x-0 top-0 z-50 whitespace-nowrap bg-ink px-4 py-2.5 text-center text-[0.7rem] font-semibold text-cream sm:text-sm">
+        Parcelas a partir de{" "}
+        <span className="text-accent">R$ 599/mês</span>{" "}
+        <span className="hidden sm:inline">
+          pelo Minha Casa Minha Vida — simulação 100% gratuita
+        </span>
+      </div>
+      <header className="fixed inset-x-0 top-10 z-50 flex justify-center px-4 pt-3 sm:top-11 sm:pt-4">
       <motion.nav
         initial={{ y: -24, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -105,5 +113,6 @@ export default function Nav() {
         )}
       </AnimatePresence>
     </header>
+    </>
   );
 }

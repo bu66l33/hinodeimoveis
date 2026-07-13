@@ -23,7 +23,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="top" className="relative overflow-hidden pb-16 pt-28 sm:pb-20 sm:pt-32">
+    <section id="top" className="relative overflow-hidden pb-16 pt-36 sm:pb-20 sm:pt-40">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="relative overflow-hidden rounded-[2rem] sm:rounded-[2.5rem]">
           <div className="absolute inset-0 z-0">
@@ -113,15 +113,25 @@ export default function Hero() {
                 </span>
                 <div className="flex items-center gap-3">
                   <div className="flex -space-x-3">
-                    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-xs font-bold text-ink ring-2 ring-ink">
-                      MC
-                    </span>
-                    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand text-xs font-bold text-cream ring-2 ring-ink">
-                      JS
-                    </span>
-                    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-cream text-xs font-bold text-ink ring-2 ring-ink">
-                      RA
-                    </span>
+                    {[
+                      "/customer-1.jpg",
+                      "/customer-2.jpg",
+                      "/customer-3.jpg",
+                      "/customer-4.jpg",
+                    ].map((src) => (
+                      <span
+                        key={src}
+                        className="relative h-9 w-9 overflow-hidden rounded-full ring-2 ring-ink"
+                      >
+                        <Image
+                          src={src}
+                          alt="Cliente Hinode Imóveis"
+                          fill
+                          sizes="36px"
+                          className="object-cover"
+                        />
+                      </span>
+                    ))}
                     <span className="flex h-9 w-9 items-center justify-center rounded-full bg-ink-soft text-xs font-bold text-cream ring-2 ring-ink">
                       +
                     </span>
