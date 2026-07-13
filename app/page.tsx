@@ -4,6 +4,7 @@ import TrustBar from "@/components/TrustBar";
 import Process from "@/components/Process";
 import Benefit from "@/components/Benefit";
 import TrustSection from "@/components/TrustSection";
+import CustomersWall from "@/components/CustomersWall";
 import Mission from "@/components/Mission";
 import Testimonials from "@/components/Testimonials";
 import Properties from "@/components/Properties";
@@ -22,6 +23,7 @@ export default function Home() {
         <Process />
         <Benefit />
         <TrustSection />
+        <CustomersWall />
         <Mission />
         <Testimonials />
         <Properties />
