@@ -23,11 +23,14 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-1 gap-12 border-b border-cream/10 pb-14 text-center sm:grid-cols-[1.3fr_1fr_1fr_1fr] sm:text-left">
           <div className="flex flex-col items-center sm:items-start">
-            <Logo light full />
+            <Logo full />
             <p className="mt-5 max-w-xs text-base leading-relaxed text-cream/50">
               Ajudamos famílias brasileiras a conquistar a casa própria
               através do Minha Casa Minha Vida, com atendimento humano e
               gratuito do início ao fim.
+            </p>
+            <p className="mt-2 text-xs font-semibold uppercase tracking-[0.15em] text-cream/40">
+              CRECI 194892J
             </p>
             <div className="mt-6 flex items-center justify-center gap-3 sm:justify-start">
               <a
