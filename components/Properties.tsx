@@ -9,40 +9,19 @@ const WHATSAPP_NUMBER = "5511988857473";
 
 const properties = [
   {
-    city: "Jardim Satélite",
-    name: "Residencial Bosque Real",
-    image:
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1000&auto=format&fit=crop",
+    city: "Jacareí",
+    name: "Residencial Vila Real",
+    image: "/property-jacarei.jpg",
   },
   {
-    city: "Urbanova",
-    name: "Condomínio Único",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop",
+    city: "Taubaté",
+    name: "Condomínio Bosque das Flores",
+    image: "/property-taubate.jpg",
   },
   {
-    city: "Vista Verde",
-    name: "Vila das Palmeiras",
-    image:
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1000&auto=format&fit=crop",
-  },
-  {
-    city: "Jardim América",
-    name: "Jardins do Vale",
-    image:
-      "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1000&auto=format&fit=crop",
-  },
-  {
-    city: "Parque Industrial",
-    name: "Recanto das Flores",
-    image:
-      "https://images.unsplash.com/photo-1592595896616-c37162298647?q=80&w=1000&auto=format&fit=crop",
-  },
-  {
-    city: "Eugênio de Melo",
-    name: "Vila Bela Vista",
-    image:
-      "https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=1000&auto=format&fit=crop",
+    city: "São José dos Campos",
+    name: "Residencial Parque das Águas",
+    image: "/property-sjc.jpg",
   },
 ];
 
@@ -66,7 +45,7 @@ export default function Properties() {
             </h2>
             <p className="mt-3 text-base leading-relaxed text-ink/55 sm:text-lg">
               Confira os imóveis na planta associados ao Minha Casa Minha
-              Vida em São José dos Campos.
+              Vida em todo o Vale do Paraíba.
             </p>
           </Reveal>
 

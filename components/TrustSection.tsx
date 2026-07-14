@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Quote } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 export default function TrustSection() {
@@ -23,43 +22,51 @@ export default function TrustSection() {
         </Reveal>
 
         <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-3">
-          <Reveal delay={0.05}>
-            <div className="relative h-full min-h-[19rem] overflow-hidden rounded-[1.5rem] shadow-[0_25px_55px_-30px_rgba(18,22,44,0.4)]">
-              <Image
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop"
-                alt="Chaves do novo lar"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/15 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-sm font-semibold leading-relaxed text-cream">
-                  Mais uma família Hinode com as chaves do novo lar na mão.
+          <Reveal delay={0.05} className="sm:col-span-2">
+            <div className="relative flex h-full flex-col justify-between overflow-hidden rounded-[1.5rem] bg-ink p-7 shadow-[0_25px_55px_-30px_rgba(18,22,44,0.4)] sm:p-9">
+              <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-accent/20 blur-[90px]" />
+              <div className="pointer-events-none absolute -bottom-20 -left-10 h-56 w-56 rounded-full bg-brand/30 blur-[90px]" />
+
+              <div className="relative">
+                <span className="inline-flex items-center rounded-full bg-cream px-3.5 py-2 shadow-[0_10px_25px_-10px_rgba(0,0,0,0.5)]">
+                  <span className="relative h-6 w-32 sm:h-7 sm:w-36">
+                    <Image
+                      src="/mcmv-logo.png"
+                      alt="Minha Casa Minha Vida"
+                      fill
+                      sizes="150px"
+                      className="object-contain object-left"
+                    />
+                  </span>
+                </span>
+                <p className="mt-5 max-w-sm text-lg font-semibold leading-snug text-cream sm:text-xl">
+                  Com renda a partir de{" "}
+                  <span className="text-accent">R$ 3.000</span>, sua família
+                  já pode conquistar a casa própria.
+                </p>
+                <p className="mt-2.5 max-w-sm text-sm leading-relaxed text-cream/60">
+                  É mais fácil do que parece: a Hinode Imóveis cuida de toda a
+                  aprovação junto à Caixa, sem custo nenhum pra você.
                 </p>
               </div>
-            </div>
-          </Reveal>
 
-          <Reveal delay={0.12}>
-            <div className="flex h-full flex-col justify-between rounded-[1.5rem] border border-ink/10 bg-white p-7">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/25">
-                <Quote
-                  className="h-6 w-6 text-accent-dark"
-                  fill="currentColor"
-                  strokeWidth={0}
-                />
-              </span>
-              <p className="mt-4 flex-1 text-lg font-medium leading-relaxed text-ink">
-                &ldquo;Empresa extremamente competente e séria. Ajudando
-                sempre a conquistar nossos sonhos de moradia própria.&rdquo;
-              </p>
-              <div className="mt-6">
-                <p className="text-sm font-semibold text-ink">
-                  Laisla Esteves Palermo
-                </p>
-                <p className="text-xs text-ink/45">
-                  Depoimento verificado de cliente
-                </p>
+              <div className="relative mt-8 grid grid-cols-2 gap-4 sm:mt-10">
+                <div>
+                  <p className="font-display text-2xl font-extrabold text-accent sm:text-3xl">
+                    R$ 599
+                  </p>
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-cream/55">
+                    parcela a partir de/mês
+                  </p>
+                </div>
+                <div>
+                  <p className="font-display text-2xl font-extrabold text-accent sm:text-3xl">
+                    R$ 55 mil
+                  </p>
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-cream/55">
+                    subsídio do governo
+                  </p>
+                </div>
               </div>
             </div>
           </Reveal>
