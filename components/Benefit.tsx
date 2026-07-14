@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowRight, Landmark } from "lucide-react";
 import { Reveal } from "./Reveal";
 
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5511988857473";
 
 export default function Benefit() {
   return (

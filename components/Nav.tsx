@@ -2,8 +2,16 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
+import { WhatsAppIcon } from "./icons/WhatsAppIcon";
+
+const WHATSAPP_NUMBER = "5511988857473";
+const WHATSAPP_MESSAGE =
+  "Olá! Quero saber se tenho direito ao Minha Casa Minha Vida com a Hinode Imóveis.";
+const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+  WHATSAPP_MESSAGE
+)}`;
 
 const links = [
   { href: "#sobre", label: "Sobre nós" },
@@ -66,10 +74,12 @@ export default function Nav() {
 
         <div className="flex items-center gap-2.5 max-lg:ml-auto">
           <a
-            href="#contato"
+            href={WHATSAPP_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden items-center gap-2 rounded-full bg-brand px-4 py-2.5 text-sm font-semibold text-cream shadow-[0_10px_26px_-10px_rgba(181,80,47,0.7)] transition-transform hover:-translate-y-0.5 sm:inline-flex"
           >
-            <MessageCircle className="h-5 w-5" strokeWidth={2.4} />
+            <WhatsAppIcon className="h-5 w-5" />
             Fale conosco
           </a>
 
@@ -102,11 +112,13 @@ export default function Nav() {
               </a>
             ))}
             <a
-              href="#contato"
+              href={WHATSAPP_HREF}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-brand px-4 py-3 text-center text-base font-semibold text-cream"
             >
-              <MessageCircle className="h-4 w-4" />
+              <WhatsAppIcon className="h-4 w-4" />
               Fale conosco
             </a>
           </motion.div>

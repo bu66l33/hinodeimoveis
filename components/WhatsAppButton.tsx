@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { WhatsAppIcon } from "./icons/WhatsAppIcon";
 
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5511988857473";
 const WHATSAPP_MESSAGE =
   "Olá! Quero saber se tenho direito ao Minha Casa Minha Vida com a Hinode Imóveis.";
 

@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { CheckCircle2, Heart, Zap } from "lucide-react";
 import { Reveal } from "./Reveal";
-import { Logo } from "./Logo";
 
 const points = [
   {
@@ -28,7 +28,15 @@ export default function Mission() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-16">
           <Reveal className="flex justify-center lg:justify-start">
-            <Logo full />
+            <div className="relative aspect-[4/3] w-full max-w-lg overflow-hidden rounded-[1.75rem] shadow-[0_30px_70px_-28px_rgba(18,22,44,0.45)]">
+              <Image
+                src="/team-office.jpg"
+                alt="Equipe Hinode Imóveis no escritório"
+                fill
+                sizes="(max-width: 1024px) 100vw, 512px"
+                className="object-cover"
+              />
+            </div>
           </Reveal>
 
           <Reveal delay={0.1}>

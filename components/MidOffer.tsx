@@ -4,7 +4,7 @@ import { useState } from "react";
 import { CheckCircle2, Home } from "lucide-react";
 import { Reveal } from "./Reveal";
 
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5511988857473";
 
 export default function MidOffer() {
   const [name, setName] = useState("");

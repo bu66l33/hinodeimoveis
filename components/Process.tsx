@@ -1,13 +1,14 @@
 "use client";
 
-import { MessageCircle, FileCheck2, KeyRound, ArrowRight } from "lucide-react";
+import { FileCheck2, KeyRound, ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
+import { WhatsAppIcon } from "./icons/WhatsAppIcon";
 
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5511988857473";
 
 const steps = [
   {
-    icon: MessageCircle,
+    icon: WhatsAppIcon,
     title: "5 minutos de conversa",
     text: "Verificamos se você ou um familiar tem direito ao Minha Casa Minha Vida, sem compromisso.",
   },

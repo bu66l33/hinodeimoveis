@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5511988857473";
 
 export function WorkWithUsLink() {
   const [open, setOpen] = useState(false);
