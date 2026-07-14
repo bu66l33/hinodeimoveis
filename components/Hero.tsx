@@ -135,7 +135,7 @@ export default function Hero() {
                     ))}
                   </div>
                   <p className="text-left text-sm font-semibold leading-snug text-cream">
-                    <span className="font-extrabold text-accent">+5.000 famílias</span>{" "}
+                    <span className="font-extrabold text-accent">+3.000 famílias</span>{" "}
                     realizaram seu sonho conosco
                   </p>
                 </div>

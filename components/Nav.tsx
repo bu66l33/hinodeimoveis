@@ -57,7 +57,7 @@ export default function Nav() {
           aria-label="Hinode Imóveis"
           className="max-lg:absolute max-lg:left-1/2 max-lg:-translate-x-1/2"
         >
-          <Logo />
+          <Logo full className="h-14 w-auto sm:h-16" />
         </a>
 
         <div className="hidden items-center gap-7 lg:flex">

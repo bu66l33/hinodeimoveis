@@ -23,7 +23,7 @@ const photos = [
 ];
 
 const stats = [
-  { value: "+5.000", label: "famílias atendidas" },
+  { value: "+3.000", label: "famílias atendidas" },
   { value: "100%", label: "gratuito e sem compromisso" },
 ];
 
@@ -58,7 +58,7 @@ export default function CustomersWall() {
               Histórias reais
             </span>
             <h2 className="font-display mt-5 text-3xl font-extrabold leading-tight tracking-tight text-cream sm:text-4xl">
-              Mais de 5.000 famílias já conquistaram o sonho da casa própria
+              Mais de 3.000 famílias já conquistaram o sonho da casa própria
               com a Hinode Imóveis.
             </h2>
             <p className="mt-5 max-w-md text-base font-medium leading-relaxed text-cream/70 sm:text-lg">

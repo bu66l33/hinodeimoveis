@@ -23,7 +23,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-1 gap-12 border-b border-cream/10 pb-14 text-center sm:grid-cols-[1.3fr_1fr_1fr_1fr] sm:text-left">
           <div className="flex flex-col items-center sm:items-start">
-            <Logo full />
+            <Logo variant="footer" />
             <p className="mt-5 max-w-xs text-base leading-relaxed text-cream/50">
               Ajudamos famílias brasileiras a conquistar a casa própria
               através do Minha Casa Minha Vida, com atendimento humano e
