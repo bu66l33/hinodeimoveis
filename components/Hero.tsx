@@ -28,10 +28,11 @@ export default function Hero() {
         <div className="relative overflow-hidden rounded-[2rem] sm:rounded-[2.5rem]">
           <div className="absolute inset-0 z-0">
             <Image
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop"
-              alt="Família em sua nova casa própria"
+              src="/hero-bg.jpg"
+              alt="Sala de estar de imóvel do Minha Casa Minha Vida"
               fill
               priority
+              quality={92}
               sizes="100vw"
               className="object-cover"
             />

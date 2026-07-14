@@ -1,4 +1,4 @@
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { Logo } from "./Logo";
 import { WorkWithUsLink } from "./WorkWithUsLink";
 
@@ -30,16 +30,15 @@ export default function Footer() {
               gratuito do início ao fim.
             </p>
             <div className="mt-6 flex items-center justify-center gap-3 sm:justify-start">
-              {[Instagram, Facebook].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  aria-label="Rede social"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-cream/20 text-cream/70 transition-colors hover:bg-cream/10 hover:text-cream"
-                >
-                  <Icon className="h-5 w-5" strokeWidth={2.2} />
-                </a>
-              ))}
+              <a
+                href="https://www.instagram.com/hinode.imoveis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-cream/20 text-cream/70 transition-colors hover:bg-cream/10 hover:text-cream"
+              >
+                <Instagram className="h-5 w-5" strokeWidth={2.2} />
+              </a>
             </div>
           </div>
 
