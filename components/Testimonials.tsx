@@ -1,39 +1,35 @@
+import Image from "next/image";
 import { BadgeCheck } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const testimonials = [
   {
     name: "Gabriel Vale",
-    date: "2 de setembro de 2023",
     quote:
       "Me deram total suporte pra compra do meu imóvel! Recomendo demais.",
-    initials: "GV",
+    photo: "/testimonial-gabriel.jpg",
   },
   {
     name: "Gabrielle Massafera",
-    date: "29 de outubro de 2023",
     quote:
       "Empresa muito profissional e dedicada a realizar sonhos dos seus clientes em conquistar o apartamento próprio. Atendimento individualizado e personalizado à necessidade de cada um.",
-    initials: "GM",
+    photo: "/testimonial-gabrielle.jpg",
   },
   {
     name: "Laisla Esteves Palermo",
-    date: "2 de novembro de 2023",
     quote:
       "Empresa extremamente competente e séria. Ajudando sempre a conquistar nossos sonhos de moradia própria.",
-    initials: "LP",
+    photo: "/testimonial-laisla.jpg",
   },
   {
     name: "Heloisa Ferreira",
-    date: "2 de novembro de 2023",
     quote: "Muito bom atendimento, seriedade no trabalho! Sempre recomendarei.",
-    initials: "HF",
+    photo: "/testimonial-heloisa.jpg",
   },
   {
     name: "Ednea Cardoso",
-    date: "4 de novembro de 2023",
     quote: "Profissionalismo, competência e conhecimento do projeto.",
-    initials: "EC",
+    photo: "/testimonial-ednea.jpg",
   },
 ];
 
@@ -58,9 +54,15 @@ export default function Testimonials() {
         {testimonials.map((t, i) => (
           <Reveal key={t.name} delay={i * 0.06} y={20}>
             <div className="flex h-full flex-col rounded-2xl border border-ink/10 bg-white p-6 shadow-[0_20px_45px_-30px_rgba(18,22,44,0.35)]">
-              <div className="flex items-start gap-3">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-semibold text-cream">
-                  {t.initials}
+              <div className="flex items-center gap-3">
+                <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full">
+                  <Image
+                    src={t.photo}
+                    alt={t.name}
+                    fill
+                    sizes="44px"
+                    className="object-cover"
+                  />
                 </span>
                 <div className="min-w-0">
                   <p className="flex items-center gap-1.5 text-base font-semibold text-ink">
@@ -69,9 +71,6 @@ export default function Testimonials() {
                       className="h-4 w-4 shrink-0 text-brand"
                       strokeWidth={2.4}
                     />
-                  </p>
-                  <p className="text-sm text-ink/45">
-                    recomenda Hinode Imóveis &middot; {t.date}
                   </p>
                 </div>
               </div>

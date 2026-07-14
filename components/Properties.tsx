@@ -10,17 +10,14 @@ const WHATSAPP_NUMBER = "5511988857473";
 const properties = [
   {
     city: "Jacareí",
-    name: "Residencial Vila Real",
     image: "/property-jacarei.jpg",
   },
   {
     city: "Taubaté",
-    name: "Condomínio Bosque das Flores",
     image: "/property-taubate.jpg",
   },
   {
     city: "São José dos Campos",
-    name: "Residencial Parque das Águas",
     image: "/property-sjc.jpg",
   },
 ];
@@ -75,24 +72,22 @@ export default function Properties() {
         >
           {properties.map((p) => (
             <div
-              key={p.name}
+              key={p.city}
               className="group relative h-[22rem] w-[17rem] shrink-0 overflow-hidden rounded-[1.5rem] shadow-[0_20px_50px_-24px_rgba(28,25,18,0.35)] [scroll-snap-align:start]"
             >
               <Image
                 src={p.image}
-                alt={p.name}
+                alt={`Empreendimento em ${p.city}`}
                 fill
-                sizes="280px"
+                quality={95}
+                sizes="(max-width: 640px) 70vw, 280px"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5">
-                <p className="flex items-center gap-1.5 text-sm font-medium text-cream/70">
-                  <MapPin className="h-4 w-4" strokeWidth={2.3} />
+                <p className="flex items-center gap-2 text-lg font-bold text-cream">
+                  <MapPin className="h-5 w-5 shrink-0" strokeWidth={2.4} />
                   {p.city}
-                </p>
-                <p className="font-display mt-1 text-xl font-bold text-cream">
-                  {p.name}
                 </p>
               </div>
             </div>
