@@ -46,7 +46,7 @@ export default function Nav() {
         initial={{ y: -24, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className={`relative flex w-full max-w-6xl items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-300 sm:px-5 ${
+        className={`relative flex w-full max-w-6xl items-center justify-between rounded-2xl px-4 py-3.5 transition-all duration-300 sm:px-5 sm:py-4 ${
           scrolled
             ? "glass shadow-[0_8px_40px_-14px_rgba(28,25,18,0.25)]"
             : "bg-transparent"
