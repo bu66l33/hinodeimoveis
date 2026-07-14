@@ -114,17 +114,25 @@ export default function Hero() {
                 </span>
                 <div className="flex items-center gap-3">
                   <div className="flex -space-x-3">
-                    {["MC", "JS", "RA"].map((initials) => (
+                    {[
+                      "/avatar-cliente-1.jpg",
+                      "/avatar-cliente-2.jpg",
+                      "/avatar-cliente-3.jpg",
+                      "/avatar-cliente-4.jpg",
+                    ].map((src) => (
                       <span
-                        key={initials}
-                        className="flex h-9 w-9 items-center justify-center rounded-full bg-brand text-xs font-bold text-cream ring-2 ring-ink"
+                        key={src}
+                        className="relative h-9 w-9 overflow-hidden rounded-full ring-2 ring-ink"
                       >
-                        {initials}
+                        <Image
+                          src={src}
+                          alt="Cliente Hinode Imóveis"
+                          fill
+                          sizes="36px"
+                          className="object-cover"
+                        />
                       </span>
                     ))}
-                    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-ink-soft text-xs font-bold text-cream ring-2 ring-ink">
-                      +
-                    </span>
                   </div>
                   <p className="text-left text-sm font-semibold leading-snug text-cream">
                     <span className="font-extrabold text-accent">+5.000 famílias</span>{" "}

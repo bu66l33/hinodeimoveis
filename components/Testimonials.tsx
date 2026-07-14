@@ -42,10 +42,10 @@ export default function Testimonials() {
             Depoimentos
           </span>
           <h2 className="font-display mt-4 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
-            Mais de 5.000 famílias conquistaram seu imóvel com a Hinode
+            Quem realizou o sonho da casa própria com a gente
           </h2>
           <p className="mx-auto mt-4 max-w-md text-base font-medium text-ink/50">
-            Depoimentos reais de quem já conquistou seu imóvel com a gente
+            Histórias reais de famílias que confiaram na Hinode Imóveis
           </p>
         </Reveal>
       </div>

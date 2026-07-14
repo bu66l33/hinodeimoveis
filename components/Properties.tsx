@@ -102,7 +102,7 @@ export default function Properties() {
           rel="noopener noreferrer"
           className="group inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-base font-semibold text-cream transition-transform hover:-translate-y-0.5"
         >
-          Quero visitar um decorado
+          Quero fazer uma simulação grátis
           <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" strokeWidth={2.4} />
         </a>
       </div>
