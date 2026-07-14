@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const WHATSAPP_NUMBER = "5511988857473";
@@ -25,7 +25,6 @@ const photos = [
 const stats = [
   { value: "+5.000", label: "famílias atendidas" },
   { value: "100%", label: "gratuito e sem compromisso" },
-  { value: "5 min", label: "para sua primeira resposta" },
 ];
 
 export default function CustomersWall() {
@@ -163,17 +162,6 @@ export default function CustomersWall() {
                     />
                   ))}
                 </div>
-              </div>
-
-              <div className="absolute -bottom-5 -left-5 flex items-center gap-2.5 rounded-2xl bg-cream px-4 py-3 shadow-[0_20px_45px_-18px_rgba(0,0,0,0.5)] sm:-left-8">
-                <div className="flex -space-x-0.5 text-accent-dark">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-3.5 w-3.5" fill="currentColor" strokeWidth={0} />
-                  ))}
-                </div>
-                <p className="text-xs font-bold text-ink">
-                  Clientes satisfeitos
-                </p>
               </div>
             </div>
           </Reveal>

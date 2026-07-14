@@ -13,7 +13,7 @@ export default function Benefit() {
         <Reveal>
           <div className="relative overflow-hidden rounded-[1.75rem] shadow-[0_30px_60px_-30px_rgba(28,25,18,0.4)]">
             <Image
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
+              src="/team-office.jpg"
               alt="Equipe Hinode Imóveis"
               width={900}
               height={700}
