@@ -30,7 +30,7 @@ export default function Footer() {
               gratuito do início ao fim.
             </p>
             <p className="mt-2 text-xs font-semibold uppercase tracking-[0.15em] text-cream/40">
-              CRECI 194892J
+              CRECI 44115J
             </p>
             <div className="mt-6 flex items-center justify-center gap-3 sm:justify-start">
               <a

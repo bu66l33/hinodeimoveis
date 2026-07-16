@@ -20,6 +20,10 @@ const photos = [
   "/customer-4.jpg",
   "/customer-5.jpg",
   "/customer-6.jpg",
+  "/customer-7.jpg",
+  "/customer-8.jpg",
+  "/customer-9.jpg",
+  "/customer-10.jpg",
 ];
 
 const stats = [
