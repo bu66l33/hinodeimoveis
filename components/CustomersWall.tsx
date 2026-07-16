@@ -24,6 +24,7 @@ const photos = [
   "/customer-8.jpg",
   "/customer-9.jpg",
   "/customer-10.jpg",
+  "/customer-11.jpg",
 ];
 
 const stats = [
