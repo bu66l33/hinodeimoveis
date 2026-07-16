@@ -14,17 +14,22 @@ const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponen
 )}`;
 
 const photos = [
-  "/customer-1.jpg",
-  "/customer-2.jpg",
-  "/customer-3.jpg",
   "/customer-4.jpg",
-  "/customer-5.jpg",
-  "/customer-6.jpg",
-  "/customer-7.jpg",
-  "/customer-8.jpg",
+  "/customer-12.jpg",
+  "/customer-1.jpg",
   "/customer-9.jpg",
-  "/customer-10.jpg",
+  "/customer-15.jpg",
+  "/customer-6.jpg",
+  "/customer-2.jpg",
+  "/customer-13.jpg",
+  "/customer-8.jpg",
+  "/customer-5.jpg",
+  "/customer-16.jpg",
+  "/customer-3.jpg",
   "/customer-11.jpg",
+  "/customer-14.jpg",
+  "/customer-7.jpg",
+  "/customer-10.jpg",
 ];
 
 const stats = [

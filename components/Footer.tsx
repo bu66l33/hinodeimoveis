@@ -5,15 +5,23 @@ import { WorkWithUsLink } from "./WorkWithUsLink";
 const columns = [
   {
     title: "Empresa",
-    links: ["Sobre nós", "Trabalhe conosco", "Contato"],
+    links: [
+      { label: "Sobre nós", href: "#missao" },
+      { label: "Trabalhe conosco", href: "" },
+      { label: "Contato", href: "#contato" },
+    ],
   },
   {
     title: "Imóveis",
-    links: ["Empreendimentos", "Minha Casa Minha Vida", "Simulação gratuita"],
+    links: [
+      { label: "Empreendimentos", href: "#imoveis" },
+      { label: "Minha Casa Minha Vida", href: "#mcmv" },
+      { label: "Simulação gratuita", href: "#top" },
+    ],
   },
   {
     title: "Suporte",
-    links: ["Central de ajuda", "Portal do cliente", "Política de privacidade"],
+    links: [{ label: "Política de privacidade", href: "/politica-de-privacidade" }],
   },
 ];
 
@@ -52,17 +60,17 @@ export default function Footer() {
               </p>
               <ul className="mt-5 flex flex-col items-center space-y-3 sm:items-start">
                 {col.links.map((l) =>
-                  l === "Trabalhe conosco" ? (
-                    <li key={l}>
+                  l.label === "Trabalhe conosco" ? (
+                    <li key={l.label}>
                       <WorkWithUsLink />
                     </li>
                   ) : (
-                    <li key={l}>
+                    <li key={l.label}>
                       <a
-                        href="#"
+                        href={l.href}
                         className="text-base text-cream/60 transition-colors hover:text-cream"
                       >
-                        {l}
+                        {l.label}
                       </a>
                     </li>
                   )

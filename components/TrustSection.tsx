@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 
 export default function TrustSection() {
   return (
-    <section className="py-24 sm:py-28">
+    <section id="mcmv" className="py-24 sm:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">
